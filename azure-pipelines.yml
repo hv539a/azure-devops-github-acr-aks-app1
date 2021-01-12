@@ -29,7 +29,7 @@ stages:
     # copy Artifact
     - task: CopyFiles@2
       inputs:
-        SourceFolder: '$(System.DefaultWorkingDirectory)/kube-manifest'
+        SourceFolder: '$(System.DefaultWorkingDirectory)/k8s-manifest'
         Contents: '**'
         TargetFolder: '$(Build.ArtifactStagingDirectory)'
         OverWrite: true
