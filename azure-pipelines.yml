@@ -21,7 +21,7 @@ stages:
         containerRegistry: 'acr-falco-test'
         repository: 'custom2aksnginxapp1'
         command: 'buildAndPush'
-        Dockerfile: '**/Dockerfile'
+        Dockerfile: 'Dockerfile.txt'
         tags: |
           $(tag)
           $(Build.SourceVersion)
