@@ -24,7 +24,7 @@ stages:
         Dockerfile: 'Dockerfile.txt'
         tags: |
           $(tag)
-          $(Build.SourceVersion)
+#         $(Build.SourceVersion)
 
     # copy Artifact
     - task: CopyFiles@2
